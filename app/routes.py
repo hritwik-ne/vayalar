@@ -38,7 +38,7 @@ def upload_file():
             flash('Result is {} and {}'.format(result[0], result[1]))
         
         
-    return render_template('upload.html')
+    return render_template('upload.html',var1 = result[0],var2 = result[1])
 
 if __name__ == '__main__':
     app.run()

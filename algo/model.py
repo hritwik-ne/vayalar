@@ -8,7 +8,7 @@ DEBUG = False
 
 class Model():
     def __init__(self, model_path):
-        self.model = pickle.load(open(model_path, 'rb'))
+        self.model = pickle.load(open('res/model_v3.sav', 'rb'))
     
     def test(self, image):
         image_rz = cv2.resize(image, (86,86))
