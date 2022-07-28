@@ -6,6 +6,7 @@ import matplotlib.pyplot as mlt
 import cv2
 import algo.model as am
 
+
 def compare_rect(rect1, rect2):
     if abs(rect1[1] - rect2[1]) > 10:
         return rect1[1] - rect2[1]
@@ -67,7 +68,7 @@ def init(model_path):
     return mdl
 
 if __name__ == '__main__':
-    model_path = 'res/model_v3.sav'
+    model_path = 'res/model_v3_jlib'
     img_path = 'data/sample.png'
     mdl = am.Model(model_path)
     result = recognise_text(img_path, mdl)

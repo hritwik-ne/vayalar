@@ -3,13 +3,38 @@
     <head>
       <title>Upload new File</title>
     </head>
+    <style>
+      .center
+      {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        font-size: larger;
+      }
+      input[type=submit] 
+      {
+        width: 20em;  height: 2em;
+      }
+      input[type=file] 
+      {
+        width: 20em;  height: 2em;
+        font-size: large;
+      }
+
+    </style>
     <body>
-      <h1>Upload new File</h1>
+      <div class="center">
+      <h1>Malayalam Character Recognition</h1>
       <form method=post enctype=multipart/form-data>
-        <input type=file name=file>
+        <input type=file name=file >
         <input type=submit value=Upload>
       </form>
-      Result = {{var1}} {{var2}}
+      <br>
+      {{var1}}
+    </div>
+      <!-- <img src="{{url_for('static',filename = 'images/letters.jpg')}}"> -->
     </body>
   </html>
     
